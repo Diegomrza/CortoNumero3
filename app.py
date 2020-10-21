@@ -14,11 +14,11 @@ app = Flask(__name__)
 def devolverDatos():
 	if request.method == 'GET':
 		return {
-    	'id' :"Carnet",
+    	'Carnet' :"201901429",
     	'nombre' :"Diego Abraham Robles Meza"
     	}
 
-@app.route("/")
+@app.route("/inversor")
 def index():
 	return ""
 
