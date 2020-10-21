@@ -22,5 +22,9 @@ def devolverDatos():
 def index():
 	return "Inversando"
 
+@app.route("/")
+def index():
+	return "Inversando"
+
 if __name__ == "__main__":
 	app.run(threaded = True,port = 8000, debug = True)
