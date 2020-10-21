@@ -5,8 +5,6 @@ class Estudiante:
 		self.carnet = carnet
 		self.nombre = nombre
 
-
-
 app = Flask(__name__)
 
 @app.route('/misDatos', methods=['GET'])
