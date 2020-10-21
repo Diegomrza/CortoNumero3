@@ -9,7 +9,7 @@ def devolverDatos():
 	if request.method == 'GET':
 
 		return {
-    	'Carné' :"201901429",
+    	'Carnet' :"201901429\n",
     	'Nombre' : "Diego Abraham Robles Meza"
     	}
 
