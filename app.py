@@ -20,7 +20,7 @@ def devolverDatos():
 
 @app.route("/inversor")
 def index():
-	return ""
+	return "Inversando"
 
 if __name__ == "__main__":
 	app.run(threaded = True,port = 8000, debug = True)
