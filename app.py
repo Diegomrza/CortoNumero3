@@ -19,9 +19,9 @@ def devolverDatos():
     	}
 
 @app.route("/inversor", methods=['POST'])
-def prueba():
+def inversor():
 	if request.method == 'POST':
-		return "Inversando";
+		return "Inversando"
 
 @app.route("/")
 def index():
