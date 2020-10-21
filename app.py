@@ -7,7 +7,11 @@ app = Flask(__name__)
 #Método para hacer la autenticación del usuario
 def devolverDatos():
 	if request.method == 'GET':
-		return "<h1>201901429 Diego Abraham Robles Meza</h1>"
+
+		return {
+    	'Carné' :"201901429",
+    	'Nombre' : "Diego Abraham Robles Meza"
+    	}
 
 @app.route("/")
 def index():
