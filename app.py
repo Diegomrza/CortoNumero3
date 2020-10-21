@@ -18,13 +18,14 @@ def devolverDatos():
     	'nombre' :"Diego Abraham Robles Meza"
     	}
 
-@app.route("/inversor")
-def index():
-	return "Inversando"
+@app.route("/inversor", methods=['POST'])
+def prueba():
+	if request.method == 'POST':
+		return "Inversando";
 
 @app.route("/")
 def index():
-	return "Inversando"
+	return ""
 
 if __name__ == "__main__":
 	app.run(threaded = True,port = 8000, debug = True)
