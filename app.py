@@ -1,10 +1,5 @@
 from flask import Flask, request, jsonify
-
-class Estudiante:
-	def __init__(self, carnet, nombre):
-		self.carnet = carnet
-		self.nombre = nombre
-
+from Estudiante import Estudiante
 app = Flask(__name__)
 
 @app.route('/misDatos', methods=['GET'])
@@ -15,6 +10,7 @@ def devolverDatos():
     	'Carnet' :"201901429",
     	'nombre' :"Diego Abraham Robles Meza"
     	}
+	
 
 @app.route("/inversor", methods=['POST'])
 def inversor():
